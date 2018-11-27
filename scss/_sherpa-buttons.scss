@@ -13,7 +13,11 @@
   transition: transform 300ms ease-in-out;
   border: 0;
   background: transparent;
-  border-radius: 40px;
+  border-radius: 4px;
+
+  &:focus, &:active {
+    color: #33373F;
+  }
 
   &.btn-default {
     background: #918F8D;

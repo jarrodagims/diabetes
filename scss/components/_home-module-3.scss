@@ -1,96 +1,57 @@
-.home-module-3 {
-  background: #151516;
-  overflow: hidden;
-  color: #fff;
+#home-module-3 {
+  padding: 90px 0;
+  text-align: left;
 
-  h2 ul.expand {
-    display: none;
-    font-size: 16px;
+  h3 {
+    font-size: 20px;
+    text-align: left;
+    color: #939393;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1em;
+    margin-top: 3em;
+  }
+
+  .accordion-btn {
+    background: $sherpa-dark-color;
+    cursor: hand;
+    cursor: pointer;
+    text-align: center;
+
+    h2 {
+      color: $white;
+      @include raleway();
+      font-size: 23px;
+      @include arrow();
+
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    text-align: left;
+    margin-top: 2em;
 
     li {
       margin-bottom: .5em;
     }
-  }
 
-  p.blurb {
-    font-size: 26px;
-    margin-bottom: 1em;
-    @include raleway();
-    color: #FFFFFF;
-    font-weight: 500;
-    line-height: 1.5;
-  } 
-
-  h5 {
-    font-style: italic;
-    font-weight: bold;
-    margin-bottom: 2em;
-    font-size: 17px;
-
-    .arrow {
-      color: $sherpa-secondary-color;
-      font-style: normal;
-      font-weight: bold;
-    }
-  }
-
-//   p.blurb {
-//     font-size: 31px;
-//     font-family: 'Poppins', sans-serif;
-//     line-height: 1.5;
-//     font-weight: 300;
-//     color: #1A1A1A;
-//   }
-
-  @media screen and (min-width: $screen-md-min) {
-      
-    
-
-    .bg-side {
-      overflow: visible;
-      
-//       &::after {
-//         background: url('../img/years.png') right 0 no-repeat;
-//         background-size: cover;
-//         content: '';
-//         width: 25vw;
-//         height: 100%;
-//         display: block;
-//         top: 0;
-//         left: 0;
-//         position: absolute;
-//         z-index: -1;
-//       }
-    }
-  }
-
-  @media screen and (max-width: $screen-sm-max) {
-    padding-top: 1.5em;
-    text-align: center;
-    padding-bottom: 0;
-
-    h4 {
-      font-size: 19px;
-      line-height: 1.5;
-      padding: 0 2em .5em;
-    }
-
-    h5 {
-      font-size: 12px;
-    }
-
-    p {
-      font-size: 15px;
-    }
-
-    p.blurb {
-      font-size: 19px;
-      margin-bottom: 1em;
+    li span {
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
       line-height: 1.5;
     }
 
-    .row {
-      display: flex;
+
+    li::before {
+      overflow: hidden;
+      float: left;
+      margin-right: .5em;
+      color: $sherpa-brand-primary;
+    }
+
+    li span {
+      overflow: hidden;
+      display: block;
     }
   }
 }

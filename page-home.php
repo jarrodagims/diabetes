@@ -8,13 +8,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="<?=FULLWIDTH?>">
-
-
                 <div class="jumbotron">
-
                     <div class="jumbo-content">
                         <h1>Endocrinologist
-                            <span>Helping the El Paso Community Lead Better Lives Through Excellent Care</span></h1>
+                            <span>Helping the El Paso Community Lead<br />Better Lives Through Excellent Care</span></h1>
 
                         <a href="<?= SITEURL ?>/contact-us/">
                             <button class="btn btn-outline">SCHEDULE AN APPOINTMENT</button>
@@ -35,20 +32,19 @@
                     </div>
                     <div class="flex-col">
                         <a href="">
-                            <h3>Diabetes Management <span>Type 1 | Type 2</span></h3>
+                            <h3><span class="arrow">Diabetes Management</span> <span class="type">Type 1 | Type 2</span></h3>
                         </a>
                     </div>
                 </div>
 			</div>
 			<div class="col-xs-12 col-md-6">
-
                 <div class="flex-row">
                     <div class="flex-col">
                         <?php get_template_part('template-parts/icons/icon', '2'); ?>
                     </div>
                     <div class="flex-col">
                         <a href="">
-                            <h3>Diabetes Symptoms</h3>
+                            <h3><span class="arrow">Diabetes Symptoms</span></h3>
                         </a>
                     </div>
                 </div>
@@ -60,23 +56,38 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
-				<div class="accordion-btn" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Best Patient Centered Clinic in El Paso</div>
+				<div class="accordion-btn" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><h2>Best Patient Centered Clinic in El Paso</h2></div>
 				<div id="collapseExample" class="accord collapse">
-					<div class="card card-body">
-						<ul>
-							<li><i class="fas fa-check-square"></i> Locally owned and operated, serving El Paso and beyond</li>
-							<li><i class="fas fa-check-square"></i> Affordable monthly costs with everything you could ever need included</li>
-							<li><i class="fas fa-check-square"></i> 5-star ratings on Facebook</li>
-							<li><i class="fas fa-check-square"></i> Take a look at our pricing options</li>
-							<li><i class="fas fa-check-square"></i> A reliable agency to suit all your professional needs</li>
-						</ul>
-					</div>
+
+                        <ul>
+                            <li class="fas fa-check"><span>Best Patient-Centered Clinic in El Paso</span></li>
+                            <li class="fas fa-check">
+                                <span>Dr. Ifeoma Egbuonu is a Highly Reviewed Endocrinologist</span></li>
+                            <li class="fas fa-check"><span>Being Local is Important to Us — We Strive to Give Back to This Wonderful Community</span>
+                            </li>
+                            <li class="fas fa-check"><span>We’re Passionate About Our Practice!</span></li>
+                            <li class="fas fa-check">
+                                <span>Our Medical Center is Located on the East Side of Town</span></li>
+                            <li class="fas fa-check"><span>We Value Patient Reviews, Please Leave Us One Today</span>
+                            </li>
+                            <li class="fas fa-check"><span>Our Office is Attentive to Your Needs, You’ll Always Be Attended To With Fast and Friendly Service!</span>
+                            </li>
+                            <li class="fas fa-check"><span>We Specialize in the Diagnosis of Thyroid Cancer</span></li>
+                            <li class="fas fa-check"><span>We Operate by Appointment Only; Please Schedule Your Consultation Today</span>
+                            </li>
+                            <li class="fas fa-check"><span>Our Transgender Medicine Specialist is One of the Few in the El Paso Area</span>
+                            </li>
+                            <li class="fas fa-check"><span>Diabetes is a Treatable Disease — It’s Important to Seek Care Early On</span>
+                            </li>
+                            <li class="fas fa-check"><span>Our Endocrinologist and Diabetes Doctor Provides Thorough Evaluations and Will Recommend Proper Treatments</span>
+                            </li>
+                        </ul>
 				</div>
-				<h2>Diabetes &amp; Endocrinology Specialists of El Paso Focuses on Your Unique Needs</h2>
+				<h3>Diabetes &amp; Endocrinology Specialists of El Paso Focuses on Your Unique Needs</h3>
 				<p>We are experts in diabetes and thyroid conditions as well as transgender medicine. Our team is dedicated to diagnosing and providing the best form of treatment based on your specific condition. As an endocrinologist and diabetes doctor, Dr. Dr. Egbuonu has devoted her education and practice to the latest forms of medical care in these two areas.</p>
 			</div>
 			<div class="col-xs-12 col-md-6">
-				<img src="<?=THEMEURL?>/img/" alt="" />
+				<img src="<?=THEMEURL?>/img/bg-woman.jpg" class="shadow" alt="" />
 			</div>
 		</div>
 	</div>
@@ -85,18 +96,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
-				<img src="<?=THEMEURL?>" alt="" />
 				<h2>Diabetes &amp; Endocrinology Specialists of El Paso Focuses on Your Unique Needs</h2>
 			</div>
 			<div class="col-xs-12 col-md-6">
 				<div class="services-box">
-					<div id="inc-flex">
-						<h5>Hyper Thyroidism</h5>
-						<h5>Transgender</h5>
-						<h5>Osteoporosis</h5>
-						<h5>Thyroid Diseases</h5>
-						<h5>Obesity Management</h5>
-						<h5>Adrenal Fatigue</h5>
+					<div>
+                        <h2>Other Services</h2>
+						<ul>
+                        <li><a href="#">Hyper Thyroidism</a></li>
+						<li><a href="#">Transgender</a></li>
+						<li><a href="#">Osteoporosis</a></li>
+						<li><a href="#">Thyroid Diseases</a></li>
+						<li><a href="#">Obesity Management</a></li>
+						<li><a href="#">Adrenal Fatigue</a></li>
+                        </ul>
 					</div>
 				</div>
 			</div>

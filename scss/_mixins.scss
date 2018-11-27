@@ -51,7 +51,7 @@ $transparency: 0.76;
 }
 
 @mixin gradient-border() {
-  border: double 4px transparent;
+  border: double 2px transparent;
   background-image: linear-gradient(white, white), radial-gradient(circle at top left, #3AB9F6,#8B17FF);
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -78,4 +78,26 @@ $transparency: 0.76;
                   #{$string},
                   2, -1
   );
+}
+
+@mixin arrow() {
+  position: relative;
+  display: inline-block;
+  padding-right: 30px;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    @include svg-arrow(#fff);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+}
+
+.shadow {
+  @include dropshadow();
 }
