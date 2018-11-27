@@ -1,0 +1,51 @@
+.jumbotron {
+    height: 545px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 0 0;
+
+    h1 {
+        font-size: 65px;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h2 {
+        @include raleway();
+        color: #fff;
+        font-weight: 300;
+    }
+
+    a {
+        display: inline-block;
+    }
+
+    button {
+        font-size: 12px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+        height: 100%;
+
+        h2 {
+            margin-bottom: 1.5em;
+        }
+
+        button {
+            width: auto;
+            font-size: 9px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h2 {
+            font-size: 21px;
+            letter-spacing: 0px;
+        }
+    }
+}

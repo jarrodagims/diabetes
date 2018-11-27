@@ -1,0 +1,51 @@
+.home-module-10 {
+  color: $white;
+  text-align: center;
+  padding: 7em 0;
+  background: #000;
+  border-bottom: 3px solid $sherpa-secondary-color;
+
+  h2 {
+    color: $white;
+    margin-top: 0;
+    font-size: 26px;
+  }
+
+  strong {
+    font-size: 20px;
+    margin-bottom: 1em;
+    display: block;
+  }
+
+  a {
+    margin-top: 2em;
+    display: block;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 2em 0 3em;
+
+    .extra-padding {
+       padding:  0 15px;
+    }
+
+    h2 {
+      font-size: 18px;
+      @include raleway();
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    strong {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      display: block;
+      font-size: 19px;
+      @include raleway();
+    }
+  }
+}

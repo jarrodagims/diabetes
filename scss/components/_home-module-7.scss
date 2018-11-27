@@ -1,0 +1,39 @@
+.home-module-7  {
+  background: url('../img/bg-flag.jpg') 0 0 no-repeat;
+  background-size: cover;
+
+  .col-md-6:first-child {
+    position: relative;
+    color: $white;
+    z-index: 0;
+
+    &::before {
+      background: rgba(0,0,0,.6);
+      content: '';
+      height: 100%;
+      position: absolute;
+      width: 100vw;
+      z-index: -1;
+      right: 0;
+      margin: 0; 
+    }
+
+    .extra-padding {
+      padding: 4em 4em 4em 0;
+    }
+
+    .brand {
+      font-weight: bold;
+    }
+
+    h2 {
+      color: $white;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    .col-md-6:first-child .extra-padding {
+      padding: 2em 15px 1em;
+    }
+  }
+}

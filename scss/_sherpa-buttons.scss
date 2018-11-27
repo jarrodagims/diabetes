@@ -1,0 +1,87 @@
+// This is for creating extra buttons
+// Mixin for creating additional buttons:
+//      button-variant($color, $background, $border)
+
+
+.btn { 
+  padding: 16px 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600;
+  color: $white;
+  transition: transform 300ms ease-in-out;
+  border: 0;
+  background: rgba(250, 192, 0, 0.5);
+  border-radius: 40px;
+
+  &.btn-default {
+    background: #918F8D;
+    &:hover {
+      background: darken(#918F8D, 10%); 
+    }
+  }
+
+  &.btn-outline {
+    border: 2px solid $sherpa-brand-primary;
+    color: $white;
+
+    &:hover {
+      background: $sherpa-brand-primary;
+      color: $white;
+    }
+    
+    background: transparent;
+  }
+  
+
+
+  &.btn-default, &.btn-primary {
+    &:hover, &:focus {
+      color: $white;
+      border-color: transparent;
+    }
+  }
+
+  &.btn-border {
+    background: transparent;
+    color: $white;
+    border: 3px solid $white;
+
+    &:hover {
+      color: $white;
+    } 
+  }
+
+  &.btn-register {
+    padding: 24px 31px;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    font-size: 9px;
+    padding: 1em 2em;
+
+    &.btn-outline {
+      padding: 1em 2em;
+    }
+  }
+}
+ 
+
+.btn-read-more {
+  margin-top: auto; 
+
+  &.btn-border {
+    background: rgba(41,41,44,0.63);
+    color: $white;
+
+    &:hover {
+      color: $white;
+      background: $sherpa-brand-primary;
+    } 
+  }
+}
+ 
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 0;
+}

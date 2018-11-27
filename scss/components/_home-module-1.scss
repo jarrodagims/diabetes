@@ -1,0 +1,92 @@
+.home-module-1 {
+  background: url('../img/bg-hero.jpg') 0 0 no-repeat;
+  background-size: cover;
+  text-align: center; 
+  position: relative;
+
+  h2 {
+    ul {
+      display: none;
+    }
+  }
+
+  .jumbotron {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+  }
+
+  .jumbo-content {
+    color: $white;
+
+    .navbar-brand {
+      top: 50px;
+    }
+ 
+    h1 {
+      line-height: 1;
+      font-size: 77px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+
+      em {
+        font-family: moderno-fb, serif;
+        color: $sherpa-brand-primary;
+        display: block;
+        font-size: 44px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  ul.social-media {
+    position: absolute; 
+    right: 30px;
+    top: 30px;
+
+    .fab {
+      font-size: 20px;
+      color: $white;
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    .container {
+      max-width: 1740px;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    background: url('../img/bg-mobile.jpg') 0 0 no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .jumbo-content {
+      margin: 0 auto;
+    }
+
+    .jumbotron {
+      text-align: center;
+      padding: 90px 0;
+
+      h1 {
+        font-size: 34px;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        margin-top: 0.5em;
+        font-weight: 500;
+      }
+
+      h1 em {
+        font-size: 20px;
+      }
+    }
+  }
+}
+

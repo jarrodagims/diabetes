@@ -1,0 +1,80 @@
+@mixin dropshadow() {
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.25);
+}
+
+@mixin dropshadow-thin() {
+  -webkit-box-shadow: 4px 4px 6px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 6px -5px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 6px -5px rgba(0,0,0,0.75);
+}
+
+
+@mixin textshadow() {
+  text-shadow: 0px 1px 15px rgba(0, 0, 0, 0.75);
+}
+
+@mixin nodropshadow() {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform:     translateY(0);
+    transform:         translateY(0)
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform:     translateY(-30px);
+    transform:         translateY(-30px)
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform:     translateY(-15px);
+    transform:         translateY(-15px)
+  }
+}
+
+@mixin raleway() {
+  font-family: 'Raleway', sans-serif;
+}
+
+$transparency: 0.76;
+
+@mixin gradient() {
+ background : -moz-linear-gradient(-324.9% 10224.34% 0deg,rgba(149, 43, 220, $transparency) 0%,rgba(149, 43, 220, $transparency) 4.55%,rgba(139, 23, 255, $transparency) 53.84%,rgba(65, 0, 215, $transparency) 100%);
+  background : -webkit-linear-gradient(0deg, rgba(149, 43, 220, $transparency) 0%, rgba(149, 43, 220, $transparency) 4.55%, rgba(139, 23, 255, $transparency) 53.84%, rgba(65, 0, 215, $transparency) 100%);
+  background : -webkit-gradient(linear,0.38% 11755.05% ,0.43% 11755.05% ,color-stop(0,rgba(149, 43, 220, $transparency) ),color-stop(0.0455,rgba(149, 43, 220, $transparency) ),color-stop(0.5384,rgba(139, 23, 255, $transparency) ),color-stop(1,rgba(65, 0, 215, $transparency) ));
+  background : -o-linear-gradient(0deg, rgba(149, 43, 220, $transparency) 0%, rgba(149, 43, 220, $transparency) 4.55%, rgba(139, 23, 255, $transparency) 53.84%, rgba(65, 0, 215, $transparency) 100%);
+  background : -ms-linear-gradient(0deg, rgba(149, 43, 220, $transparency) 0%, rgba(149, 43, 220, $transparency) 4.55%, rgba(139, 23, 255, $transparency) 53.84%, rgba(65, 0, 215, $transparency) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#952BDC', endColorstr='#4100D7' ,GradientType=0)";
+  background : linear-gradient(90deg, rgba(149, 43, 220, $transparency) 0%, rgba(149, 43, 220, $transparency) 4.55%, rgba(139, 23, 255, $transparency) 53.84%, rgba(65, 0, 215, $transparency) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#952BDC',endColorstr='#4100D7' , GradientType=1);
+}
+
+@mixin gradient-btn($transparency: 0.75) {
+  background: rgb(149,43,220);
+  background: linear-gradient(90deg, rgba(149,43,220,$transparency) 0%, rgba(149,43,220,$transparency) 4%, rgba(139,23,255,$transparency) 53%, rgba(65,0,215,$transparency) 100%);
+}
+
+@mixin red-gradient() {
+  background: rgb(255,212,23);
+  background: linear-gradient(90deg, rgba(255,212,23,0.75) 0%, rgba(255,0,0,1) 100%);
+}
+
+@mixin gradient-line() {
+  background: rgb(255,212,23);
+  background: linear-gradient(90deg, rgba(255,212,23,1) 0%, rgba(255,0,0,1) 100%);
+}
+
+
+@function _trim($string) {
+  @return str-slice(
+                  #{$string},
+                  2, -1
+  );
+}

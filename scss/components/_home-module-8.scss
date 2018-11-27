@@ -1,0 +1,25 @@
+.home-module-8 {
+  text-align: center;
+  padding: 4em 0;
+  border-bottom: 3px solid $sherpa-secondary-color;
+
+  h2 {
+    margin-top: 0;
+    font-size: 26px;
+  }
+
+  a {
+    margin-top: 2em;
+    display: block;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 2em 0 3em;
+    
+    h2 {
+      font-size: 22px;
+      @include raleway();
+    }
+
+  }
+}
