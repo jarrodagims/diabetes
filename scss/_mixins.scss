@@ -46,14 +46,15 @@
 $transparency: 0.76;
 
 @mixin gradient() {
- background : -moz-linear-gradient(-324.9% 10224.34% 0deg,rgba(149, 43, 220, $transparency) 0%,rgba(149, 43, 220, $transparency) 4.55%,rgba(139, 23, 255, $transparency) 53.84%,rgba(65, 0, 215, $transparency) 100%);
-  background : -webkit-linear-gradient(0deg, rgba(149, 43, 220, $transparency) 0%, rgba(149, 43, 220, $transparency) 4.55%, rgba(139, 23, 255, $transparency) 53.84%, rgba(65, 0, 215, $transparency) 100%);
-  background : -webkit-gradient(linear,0.38% 11755.05% ,0.43% 11755.05% ,color-stop(0,rgba(149, 43, 220, $transparency) ),color-stop(0.0455,rgba(149, 43, 220, $transparency) ),color-stop(0.5384,rgba(139, 23, 255, $transparency) ),color-stop(1,rgba(65, 0, 215, $transparency) ));
-  background : -o-linear-gradient(0deg, rgba(149, 43, 220, $transparency) 0%, rgba(149, 43, 220, $transparency) 4.55%, rgba(139, 23, 255, $transparency) 53.84%, rgba(65, 0, 215, $transparency) 100%);
-  background : -ms-linear-gradient(0deg, rgba(149, 43, 220, $transparency) 0%, rgba(149, 43, 220, $transparency) 4.55%, rgba(139, 23, 255, $transparency) 53.84%, rgba(65, 0, 215, $transparency) 100%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#952BDC', endColorstr='#4100D7' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(149, 43, 220, $transparency) 0%, rgba(149, 43, 220, $transparency) 4.55%, rgba(139, 23, 255, $transparency) 53.84%, rgba(65, 0, 215, $transparency) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#952BDC',endColorstr='#4100D7' , GradientType=1);
+  background: rgb(58,185,246);
+  background: linear-gradient(90deg, rgba(58,185,246,1) 0%, rgba(139,23,255,1) 100%);
+}
+
+@mixin gradient-border() {
+  border: double 4px transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #3AB9F6,#8B17FF);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 @mixin gradient-btn($transparency: 0.75) {

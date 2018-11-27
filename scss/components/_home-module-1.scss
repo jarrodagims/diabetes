@@ -1,4 +1,4 @@
-.home-module-1 {
+#home-module-1 {
   background: url('../img/bg-hero.jpg') 0 0 no-repeat;
   background-size: cover;
   text-align: center; 
@@ -13,9 +13,9 @@
   .jumbotron {
     margin-bottom: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
-    text-align: left;
+    text-align: right;
   }
 
   .jumbo-content {
@@ -30,6 +30,16 @@
       font-size: 77px;
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
+      color: $gray-md;
+
+      span {
+        font-size: 27px;
+        font-weight: 300;
+        line-height: 1.5;
+        display: block;
+        @include raleway();
+        margin-top: .5em;
+      }
 
       em {
         font-family: moderno-fb, serif;
@@ -38,6 +48,10 @@
         font-size: 44px;
         margin-bottom: 0;
       }
+    }
+
+    p {
+      color: $gray-md;
     }
   }
 

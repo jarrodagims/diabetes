@@ -4,36 +4,59 @@
 	*/
 	get_header(); ?>
 
-<section id="home-one">
+<section id="home-module-1">
 	<div class="container">
 		<div class="row">
 			<div class="<?=FULLWIDTH?>">
-				<h1>Endocrinologist</h1>
-				<p>Helping th El Paso Community Lead<br/>
-				Better Lives Through Excelent Care</p>
+
+
+                <div class="jumbotron">
+
+                    <div class="jumbo-content">
+                        <h1>Endocrinologist
+                            <span>Helping the El Paso Community Lead Better Lives Through Excellent Care</span></h1>
+
+                        <a href="<?= SITEURL ?>/contact-us/">
+                            <button class="btn btn-outline">SCHEDULE AN APPOINTMENT</button>
+                        </a>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="home-two">
+<section id="home-module-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6 text-right">
-				<a href="">
-					<img src="<?=THEMEURL?>/img/" alt="" />
-					<h3>Diabetes Management <span>Type 1 | Type 2</span></h3>		
-				</a>
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <?php get_template_part('template-parts/icons/icon', '1'); ?>
+                    </div>
+                    <div class="flex-col">
+                        <a href="">
+                            <h3>Diabetes Management <span>Type 1 | Type 2</span></h3>
+                        </a>
+                    </div>
+                </div>
 			</div>
 			<div class="col-xs-12 col-md-6">
-				<a href="">
-					<img src="<?=THEMEURL?>/img/" alt="" />
-					<h3>Diabetes Symptoms</h3>
-				</a>
+
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <?php get_template_part('template-parts/icons/icon', '2'); ?>
+                    </div>
+                    <div class="flex-col">
+                        <a href="">
+                            <h3>Diabetes Symptoms</h3>
+                        </a>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="home-three">
+<section id="home-module-3">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
@@ -58,7 +81,7 @@
 		</div>
 	</div>
 </section>
-<section id="home-four">
+<section id="home-module-4">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
@@ -80,7 +103,7 @@
 		</div>
 	</div>
 </section>
-<section id="home-five">
+<section id="home-module-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
@@ -92,7 +115,7 @@
 		</div>
 	</div>
 </section>
-<section id="home-six">
+<section id="home-module-6">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
@@ -106,7 +129,7 @@
 		</div>
 	</div>
 </section>
-<section id="home-seven">
+<section id="home-module-7">
 	<div class="container">
 		<div class="row">
 			<div class="<?=FULLWIDTH?> text-center">
