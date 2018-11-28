@@ -94,11 +94,31 @@
 </section>
 <section id="home-module-4">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-6">
-				<h2>Diabetes &amp; Endocrinology Specialists of El Paso Focuses on Your Unique Needs</h2>
-			</div>
-			<div class="col-xs-12 col-md-6">
+		<div class="row flex-row">
+			<div class="col-xs-12 col-md-6 flex-col">
+                <div class="accordion-btn" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample"><h2>Our clinic provides<br />
+                        patients in the El Paso area<br /> with the following diagnosis:</h2></div>
+                <div id="collapse2" class="accord collapse">
+                    <ul>
+                        <li class="fas fa-check"><a href=""><span>Diabetes (Type 1 and Type 2)</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Hyperthyroidism</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Hypothyroidism</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Hypogonadism</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Thyroid Nodules</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Thyroid Cancer</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Pituitary Tumors</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Adrenal Glands Disorder</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Adrenal Fatigue</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Osteoporosis</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Polycystic Ovarian Syndrome</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Transgender Medicine</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Calcium Disorders</span></a></li>
+                        <li class="fas fa-check"><a href=""><span>Obesity</span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+			<div class="col-xs-12 col-md-6 flex-col">
 				<div class="services-box">
 					<div>
                         <h2>Other Services</h2>
@@ -121,6 +141,11 @@
 		<div class="row">
 			<div class="col-xs-12 col-md-6">
 				<span>Contact us Today!</span>
+                <?php $sm = new SocialMedia(array('facebook', 'twitter'));
+                $sm->setSize('md');
+                $sm->showNetworkButtons();
+                $sm->setColorType('singleColor');
+                ?>
 			</div>
 			<div class="col-xs-12 col-md-6">
 				<h2>What Can I Expect as a Patient?</h2>
@@ -130,14 +155,14 @@
 </section>
 <section id="home-module-6">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-6">
-				<h2>As a patient of Diabetes &amp; Endocrinology Specialists of El Paso.</h2>
-				<p>You can expect to receive the best of care available in the Southwest.</p>
+		<div class="row flex-row">
+			<div class="col-xs-12 col-md-6 flex-col">
+				<div class="box"><h2>As a patient of Diabetes &amp; Endocrinology Specialists of El Paso.</h2>
+				<p>You can expect to receive the best of care available in the Southwest.</p></div>
 			</div>
-			<div class="col-xs-12 col-md-6">
-				<h3>What Can I Expect as a Patient?</h3>
-				<p>This will allow our endocrinologist and diabetes doctor to better assess your history of any former illnesses and how it relates to your present health. Following your evaluation, Dr. Egbuonu will provide you with a treatment plan, all based on your respective needs. Our personalized approach is designed to give you the results needed to achieve optimum health as well as your goals for a happier, more successful life.</p>
+			<div class="col-xs-12 col-md-6 flex-col">
+				<h3>When you come to us a new patient, we’ll first evaluate your medical records.</h3>
+				<p>This will allow our endocrinologist and diabetes doctor to better assess your history of any former illnesses and how it relates to your present health. Following your evaluation, Dr. Egbuonu will give you a treatment plan, all based on your needs. Our personalized approach is designed to give you the results needed to achieve optimum health as well as your goals for a happier, more successful life.</p>
 			</div>
 		</div>
 	</div>
@@ -147,7 +172,7 @@
 		<div class="row">
 			<div class="<?=FULLWIDTH?> text-center">
 				<h2>Receive Personalized Care by Contacting Us Today</h2>
-				<p>To schedule your consultation, simply give us a call today. Our friendly office manager will help answer all of your initial questions. Please note, we operate on an appointment-only basis so that you can receive prompt, courteous, and dedicated service. We look forward to meeting you!</p>
+				<p>To schedule your consultation, simply give us a call today. Our friendly office manager will help answer all of your questions. Please note, we work on an appointment-only basis so that you can receive prompt, courteous, and dedicated service. We look forward to meeting you!</p>
 			</div>
 		</div>
 	</div>

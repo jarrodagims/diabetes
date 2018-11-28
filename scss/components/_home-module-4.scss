@@ -1,7 +1,98 @@
 #home-module-4 {
-  background: url('../img/bg-diag.jpg') right 0 no-repeat;
-  background-size: cover;
+  position: relative;
   text-align: left;
+  background: #33373F;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+  h2 {
+    color: $white;
+    z-index: 1;
+    @include raleway();
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  .accordion-btn {
+    cursor: hand;
+    cursor: pointer;
+  }
+
+  .col-md-6:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    z-index: 99;
+    padding-bottom: 4em;
+
+
+  ul {
+    padding-left: 0;
+    text-align: left;
+    margin-top: 2em;
+
+    li {
+      margin-bottom: .5em;
+    }
+
+    li span {
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      line-height: 1.5;
+      color: $white;
+    }
+
+
+    li::before {
+      overflow: hidden;
+      float: left;
+      margin-right: .25em;
+      margin-top: .25em;
+      color: $sherpa-brand-primary;
+    }
+
+    li span {
+      overflow: hidden;
+    }
+  }
+
+    &::before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 50vw 0 0 50vw;
+      border-color: transparent transparent transparent #33373f;
+      content: '';
+      position: absolute;
+      left: -20vw;
+      z-index: -1;
+      bottom: 0;
+    }
+  } 
+
+  .col-md-6:last-child {
+    position: relative;
+    padding: 90px 0;
+    z-index: 99;
+  }
+
+  background: transparent url('../img/bg-diag1.jpg') 0 0 no-repeat;
+  background-size: cover;
+
+//   .col-md-6:last-child::after {
+//     background: transparent url('../img/bg-diag.jpg') 0 0 no-repeat;
+//     background-size: cover;
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     right: 0;
+//     width: 50vw;
+//     top: 0;
+//     height: 100%;
+//     z-index: -1;
+//   }
 
   .services-box {
     background: rgb(255,255,255);

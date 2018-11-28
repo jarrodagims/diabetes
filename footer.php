@@ -1,5 +1,5 @@
     <div id="map-section">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13564.618441970673!2d-106.40024!3d31.793536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf8ef377214c06e38!2sA+D+Roofing!5e0!3m2!1sen!2sus!4v1543275676790" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13566.061303960667!2d-106.2666948!3d31.7837027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4772737c10c313d8!2sDiabetes+%26+Endocrinology+Specialists+of+El+Paso!5e0!3m2!1sen!2sus!4v1543429974859" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
 <section id="footer">
@@ -17,21 +17,27 @@
 
 
                         <div class="contact-footer phone-footer">
-                        <div><span class="title">Contact</span>
-                            <p>6455 Hiller Suite 10, El Paso, Texas 79925<br />
-                                <strong>Call Us Today!</strong> <?php printPhone(); ?></p>
+                        <div><span class="title">Address</span>
+                            <p>2270 Joe Battle Blvd, Suite O<br />
+                                El Paso, TX 79938<br />
+                                <strong>By appointment only</strong><br />
+                                <a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a></p>
                         </div>
                     </div>
                     <div class="hours-footer">
                         <div>
-                            <span class="title">HOURS</span>
-                            <p>Monday - Friday: <strong>7:00am - 7:00pm</strong><br />
-                                Saturday -  Sunday: <strong>Closed</strong></p>
+                            <span class="title">Office HOURS</span>
+                            <p>Monday - Friday:<br />
+                                <strong>8:00am - 5:00pm</strong><br />
+                                Saturday - Sunday:<br />
+                                <strong>Closed</strong></p>
                         </div>
                     </div>
 
                     <div class="button-footer">
-                        <img src="<?=IMGURL?>better-business.png" alt="Better Business Bureau" />
+                        <a href="<?= SITEURL ?>/contact-us/">
+                            <button class="btn btn-outline">SCHEDULE AN APPOINTMENT</button>
+                        </a>
                     </div></div>
                 </div>
             </div>
@@ -44,15 +50,6 @@
                 <div class="flex-row">
                     <div class="flex-col hidden-xs hidden-sm">
                         <?php echo non_responsive_bs_menu('footer'); ?>
-                    </div>
-                    <div class="flex-col">
-                        <a href=""><button class="btn btn-outline">SCHEDULE AN APPOINTMENT</button></a>
-
-                        <div class="visible-xs visible-sm"><?php $sm = new SocialMedia(array('facebook', 'twitter'));
-                        $sm->setSize('sm');
-                        $sm->showNetworkButtons();
-                        $sm->setColorType('singleColor');
-                        ?></div>
                     </div>
                 </div>
             </div>

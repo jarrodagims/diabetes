@@ -46,10 +46,69 @@
 
 body #main .container article #sidebar {
   float: right;
-  width: 369px;
+  width: 468px;
   margin-left: 4em;
   text-align: center;
   background: #151516;
+
+  .sidebar-top-dark {
+      background: #33373F;
+      padding: 2em 3em;
+      margin-top: 3em;
+
+      p {
+        margin-bottom: 0;
+        color: $white;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+
+  .services-box {
+    padding: 4em 2em;
+    background: url('../img/bg-sidebar.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    h2 {
+      color: $white;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+
+
+      li {
+        width: 50%;
+
+        a {
+          display: block !important;
+          @include arrow();
+          @include gradient-border();
+          font-size: 13px;
+          color: $white;
+          margin: 2px;
+          padding: 2em 1em;
+          text-align: left;
+          border: double 1px transparent;
+          background-image: linear-gradient(#33373F, #33373F), radial-gradient(circle at top left, #3AB9F6,#8B17FF);
+
+          &::after {
+            right: 1em;
+          }
+
+          &:hover {
+            background-image: linear-gradient($sherpa-brand-primary, $sherpa-brand-primary), radial-gradient(circle at top left, #3AB9F6,#8B17FF);
+          }
+        }
+      }
+    }
+  }
 
   .home-guarantee {
     width: 150px;
@@ -389,6 +448,38 @@ body #main .container article #sidebar {
     margin-bottom: 2em;
     padding-top: 0;
     z-index: 99;
+    background: none;
+
+    .shadow {
+      @include dropshadow-thin();
+    }
+
+    
+
+    .sidebar-top {
+      background: url('../img/sidebar-top.jpg') 0 0 no-repeat;
+      background-size: cover;
+      height: 231px;
+      width: 100%; 
+    }
+ 
+    .sidebar-bottom {
+      padding: 0 1em 2em;
+
+      h2 {
+        margin-bottom: .5em;
+        color: #33373F;
+        font-size: 26px;
+      }
+
+      p {
+        margin-bottom: 1em;
+        @include raleway();
+        color: #33373F;
+        line-height: 1.5;
+        font-size: 17px;
+      }
+    }
   }
 }
 

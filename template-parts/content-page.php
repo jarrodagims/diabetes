@@ -39,7 +39,7 @@
                 echo the_post_thumbnail(array(1060,209));
             else:
                 ?>
-                <img class="visible-xs" src="<?= IMGURL ?>banner-bottom.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
+                <img src="<?= IMGURL ?>bg-banner-bottom.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
             <?php
             endif; ?>
             </div>
@@ -51,6 +51,15 @@
                        </div>
                </section>
            <?php  }
+            ?>
+            <?php
+            if (get_field('page_bottom', $pageid)) { ?>
+                <section class="page-bottom">
+                    <div class="row">
+                        <div class="col-xs-12"><?php echo get_field('page_bottom', $pageid); ?></div>
+                    </div>
+                </section>
+            <?php  }
             ?>
             <div class="content">
             <?php

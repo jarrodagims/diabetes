@@ -77,4 +77,22 @@
         </div>
     </div>
 
+    <?php if(!is_front_page()) : ?>
+    <div class="top-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <?php
+                        if(have_posts()) {
+                        while(have_posts()) {
+                        the_post();
+                            echo get_the_title();
+                            }
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>
 
