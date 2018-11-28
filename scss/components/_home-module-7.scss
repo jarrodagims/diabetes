@@ -13,4 +13,17 @@
     font-size: 20px;
   }
 
+  @media screen and (max-width: $screen-sm-max) {
+      text-align: center;
+      padding: 2em 0;
+
+      h2 {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+  }
+
 }

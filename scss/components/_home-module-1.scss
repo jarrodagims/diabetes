@@ -75,31 +75,25 @@
   }
 
   @media screen and (max-width: $screen-sm-max) {
-    background: url('../img/bg-mobile.jpg') 0 0 no-repeat;
-    background-size: cover;
-    position: relative;
+   background: #fff;
+
+   .jumbotron {
+     justify-content: center;
+     align-items: center;
+     padding: 0 0 2em;
+   }
 
     .jumbo-content {
-      margin: 0 auto;
-    }
+       text-align: center;
+       
 
-    .jumbotron {
-      text-align: center;
-      padding: 90px 0;
+       h1 {
+         font-size: 21px;
 
-      h1 {
-        font-size: 34px;
-        margin-bottom: 0;
-      }
-
-      h2 {
-        margin-top: 0.5em;
-        font-weight: 500;
-      }
-
-      h1 em {
-        font-size: 20px;
-      }
+         span {
+            font-size: 13px;
+         }
+       }
     }
   }
 }

@@ -372,12 +372,12 @@
     input[type="submit"] {
       margin-top: 1em;
       margin-bottom: 1em;
-      margin-left: 0;
+      margin-left: 0; 
       padding: 20px 32px;
       transition: all 0.3s ease-in-out; 
       border: 0;
-      background: #FF0008;
-      color: $white;
+      background: $sherpa-brand-primary;
+      color: $white;  
 
       &:hover {
         color: $white;

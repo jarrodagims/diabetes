@@ -53,13 +53,12 @@
     <![endif]-->
 
     <div class="flex-order">
-
         <div class="top-header">
             <div class="container">
                 <div class="row ">
                     <div class="v-align">
                         <div class="col-xs-12 navbar-button text-center">
-                            <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
+                            <a class="navbar-brand hidden-xs" href='<?php echo get_site_url(); ?>'><img
                                         src="<?= IMGURL; ?>logo.png"
                                         alt="<?php echo get_bloginfo(
                                             'description'
