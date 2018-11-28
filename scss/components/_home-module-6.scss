@@ -106,4 +106,21 @@
       } 
     }
   }
+
+  @media screen and (max-width: $screen-sm-max) {
+    .col-md-6:last-child {
+        text-align: center;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        h3 {
+          font-size: 17px;
+          margin-top: 0;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+    }
+  }
 }

@@ -170,8 +170,8 @@
 				<p>You can expect to receive the best of care available in the Southwest.</p></div>
 			</div>
 			<div class="col-xs-12 col-md-6 flex-col">
-				<h3>When you come to us a new patient, we’ll first evaluate your medical records.</h3>
-				<p>This will allow our endocrinologist and diabetes doctor to better assess your history of any former illnesses and how it relates to your present health. Following your evaluation, Dr. Egbuonu will give you a treatment plan, all based on your needs. Our personalized approach is designed to give you the results needed to achieve optimum health as well as your goals for a happier, more successful life.</p>
+				<div class="extra-padding"><h3>When you come to us a new patient, we’ll first evaluate your medical records.</h3>
+				<p>This will allow our endocrinologist and diabetes doctor to better assess your history of any former illnesses and how it relates to your present health. Following your evaluation, Dr. Egbuonu will give you a treatment plan, all based on your needs. Our personalized approach is designed to give you the results needed to achieve optimum health as well as your goals for a happier, more successful life.</p></div>
 			</div>
 		</div>
 	</div>
