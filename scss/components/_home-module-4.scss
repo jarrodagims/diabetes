@@ -103,7 +103,7 @@
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(253,253,254,0.18) 26%, rgba(253,253,254,0.37) 100%);
     padding: 2em;
     @include dropshadow();
-    max-width: 525px;
+    
 
     h2 {
       color: $white;
@@ -145,7 +145,18 @@
     }
   }
 
+  @media screen and (min-width: $screen-md-min) {
+    .services-box {
+      max-width: 525px;
+    }
+  }
+
   @media screen and (max-width: $screen-sm-max) {
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
 
     .col-md-6:first-child {
       &::before {
@@ -167,6 +178,7 @@
       .services-box {
         background: transparent;
         padding: 55px 0;
+        width: 100%;
 
         ul {
           display: flex;

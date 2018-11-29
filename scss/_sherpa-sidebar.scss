@@ -53,7 +53,7 @@ body #main .container article #sidebar {
 
   .sidebar-top-dark {
       background: #33373F;
-      padding: 2em 3em;
+      padding: 2.95em 3em;
       margin-top: 3em;
 
       p {
@@ -67,7 +67,7 @@ body #main .container article #sidebar {
     }
 
   .services-box {
-    padding: 4em 2em;
+    padding: 4.5em 1em;
     background: url('../img/bg-sidebar.jpg') 0 0 no-repeat;
     background-size: cover;
 
@@ -412,7 +412,7 @@ body #main .container article #sidebar {
   }
 
   p {
-    font-size: 22px;
+    font-size: 17px;
     text-align: center;
     margin-bottom: 2em;
     @include raleway();
@@ -464,20 +464,22 @@ body #main .container article #sidebar {
     }
  
     .sidebar-bottom {
-      padding: 0 1em 2em;
+      padding: 0 4em 3.5em;
 
       h2 {
         margin-bottom: .5em;
         color: #33373F;
-        font-size: 26px;
+        font-size: 27px;
+        margin-top: 2em;
+        font-family: 'Poppins', sans-serif;
       }
 
       p {
         margin-bottom: 1em;
         @include raleway();
         color: #33373F;
-        line-height: 1.5;
-        font-size: 17px;
+        line-height: 2;
+        font-size: 17px; 
       }
     }
   }
