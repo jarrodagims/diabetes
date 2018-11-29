@@ -31,10 +31,16 @@
                                 <strong>8:00am - 5:00pm</strong><br />
                                 Saturday - Sunday:<br />
                                 <strong>Closed</strong></p>
+
+                            <div class="visible-xs visible-sm"><?php $sm = new SocialMedia(array('facebook', 'twitter'));
+                            $sm->setSize('sm');
+                            $sm->showNetworkButtons();
+                            $sm->setColorType('singleColor');
+                            ?></div>
                         </div>
                     </div>
 
-                    <div class="button-footer">
+                    <div class="button-footer hidden-xs hidden-sm">
                         <a href="<?= SITEURL ?>/contact-us/">
                             <button class="btn btn-outline">SCHEDULE AN APPOINTMENT</button>
                         </a>
@@ -43,7 +49,7 @@
             </div>
     </div>
 </section>
-<section class="footer-nav ">
+<section class="footer-nav hidden-xs hidden-sm ">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">

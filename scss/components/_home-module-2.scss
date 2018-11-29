@@ -2,7 +2,7 @@
   background: $sherpa-dark-color;
   color: $white;
   position: relative;
-  padding: 33px 0;
+  padding: 39px 0;
 
   .flex-col {
     justify-content: center;
@@ -44,16 +44,21 @@
   h3 {
       color: $white;
       position: relative;
-      padding-right: 30px;
+      padding-right: 50px;
+      margin: 0 0;
+      font-size: 23px;
+      letter-spacing: -1px;
 
       span.type {
         display: block;
         font-size: 14px;
         margin-top: .5em;
+        letter-spacing: 0;
       }
 
       span.arrow {
         position: relative;
+        display: block;
       }
 
       span.arrow:after {
@@ -62,7 +67,7 @@
         height: 20px;
         width: 20px;
         position: absolute;
-        right: -30px;
+        right: -50px;
         @include svg-arrow(#fff);
         top: 50%;
         transform: translateY(-50%);
@@ -70,7 +75,7 @@
   }
 
   svg {
-    height: 44px;
+    height: 53px;
     margin-right: 1em;
   }
 
@@ -89,7 +94,9 @@
     }
 
     svg {
-      height: 30px;
+      height: 20px;
+      margin-right: 0;
+      margin-bottom: 1em;
     }
 
         &::after {

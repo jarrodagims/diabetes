@@ -43,15 +43,6 @@
             <?php
             endif; ?>
             </div>
-           <?php
-           if (get_field('page_bottom', $pageid)) { ?>
-               <section class="page-bottom">
-                       <div class="row">
-                           <div class="col-xs-12"><?php echo get_field('page_bottom', $pageid); ?></div>
-                       </div>
-               </section>
-           <?php  }
-            ?>
             <?php
             if (get_field('page_bottom', $pageid)) { ?>
                 <section class="page-bottom">

@@ -2,15 +2,31 @@
   background: #33373F;
   color: $white;
   padding: 112px 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    @include gradient();
+    height: 3px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }  
 
   h2 {
     color: $white;
     @include raleway();
+    font-size: 26px;
+    margin-bottom: 1.5em;
+    font-weight: 300;
   }
 
   p {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 300;
   }
 
   @media screen and (max-width: $screen-sm-max) {

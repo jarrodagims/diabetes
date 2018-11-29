@@ -83,7 +83,6 @@ $transparency: 0.76;
 
 @mixin arrow() {
   position: relative;
-  display: inline-block;
   padding-right: 30px;
 
   &::after {

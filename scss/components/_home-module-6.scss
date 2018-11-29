@@ -8,9 +8,10 @@
   .box {
     background : #202328;
     background : rgba(32, 35, 40, .9);
-    padding: 4em 3em;
+    padding: 5em;
     text-align: center;
     @include raleway();
+    margin: 5em 0 5em 0;
 
     h2 {
       margin-bottom: 1em;
@@ -46,19 +47,20 @@
     h3 {
       font-size: 20px;
       color: #939393;
-      font-weight: 300;
+      font-weight: 500;
       font-family: 'Poppins', sans-serif;
       line-height: 1.5;
+      margin-bottom: 2em;
     }
   }
 
   .col-md-6:first-child::before {
-    background: transparent url('../img/bg-diag2.jpg') 0 0 no-repeat;
+    background: transparent url('../img/bg-diag2.jpg') right 0 no-repeat;
     background-size: cover; 
     content: '';
     display: block;
     position: absolute;
-    left: calc(-25vw - 15px);
+    left: -25vw;
     width: 50vw;
     top: 0;
     height: 100%; 
@@ -108,6 +110,34 @@
   }
 
   @media screen and (max-width: $screen-sm-max) {
+
+    .col-md-6:first-child::before {
+      background: none;
+    }
+
+    img {
+      margin: 30px 15px 0 15px;
+    }
+
+    .box {
+      padding: 1em 30px;
+      margin-left: 15px;
+      margin-right: 15px;
+      background: #202328;
+      margin-top: 2em;
+      margin-bottom: 0;
+
+      h2 {
+        font-size: 17px;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 13px;
+        margin-bottom: 1em;
+      }
+    }
+
     .col-md-6:last-child {
         text-align: center;
         padding-top: 2em;

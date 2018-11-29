@@ -5,11 +5,13 @@
 	get_header(); ?>
 
 <section id="home-module-1">
-    <a class="navbar-brand visible-xs visible-sm" href='<?php echo get_site_url(); ?>'><img
-    src="<?= IMGURL; ?>logo.png"
-    alt="<?php echo get_bloginfo(
-        'description'
-    ); ?>" /></a>
+    <div class="brand-header visible-xs visible-sm">
+        <a class="navbar-brand visible-xs" href='<?php echo get_site_url(); ?>'><img
+                    src="<?= IMGURL; ?>logo.png"
+                    alt="<?php echo get_bloginfo(
+                        'description'
+                    ); ?>" /></a>
+    </div>
     <img class="visible-xs visible-sm" src="<?=THEMEURL?>/img/bg-hero-mobile.jpg" alt="" />
     <div class="container">
 		<div class="row">
@@ -38,7 +40,7 @@
                         </div>
                         <div class="flex-col">
                             <a href="">
-                                <h3><span class="arrow">Diabetes Management</span> <span class="type">Type 1 | Type 2</span></h3>
+                                <h3><span class="arrow"><span>Diabetes Management</span> <span class="type">Type 1 | Type 2</span></span></h3>
                             </a>
                         </div>
                     </div>
@@ -66,7 +68,6 @@
                 <div class="col-xs-12 col-md-6">
                     <div class="accordion-btn" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><h2>Best Patient Centered Clinic in El Paso</h2></div>
                     <div id="collapseExample" class="accord collapse">
-
                         <ul>
                             <li class="fas fa-check"><span>Best Patient-Centered Clinic in El Paso</span></li>
                             <li class="fas fa-check">
@@ -91,7 +92,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="extra-padding"><h3>Diabetes &amp; Endocrinology Specialists of El Paso Focuses on Your Unique Needs</h3>
+                    <div class="extra-padding"><h3>Diabetes &amp; Endocrinology Specialists of <span class="br-md">El Paso Focuses on Your Unique Needs</span></h3>
                     <p>We are experts in diabetes and thyroid conditions as well as transgender medicine. Our team is dedicated to diagnosing and providing the best form of treatment based on your specific condition. As an endocrinologist and diabetes doctor, Dr. Dr. Egbuonu has devoted her education and practice to the latest forms of medical care in these two areas.</p></div>
                 </div>
                 <div class="col-xs-12 col-md-6">
@@ -147,14 +148,20 @@
 </div>
 <section id="home-module-5">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-6">
-				<span>Contact us Today!</span>
-                <?php $sm = new SocialMedia(array('facebook', 'twitter'));
-                $sm->setSize('md');
-                $sm->showNetworkButtons();
-                $sm->setColorType('singleColor');
-                ?>
+		<div class="row flex-row">
+			<div class="col-xs-12 col-md-6 flex-col">
+                <div class="flex-row">
+                    <div class="flex-col">
+                        <span>Contact us Today!</span>
+                    </div>
+                    <div class="flex-col">
+                        <?php $sm = new SocialMedia(array('facebook', 'twitter'));
+                        $sm->setSize('md');
+                        $sm->showNetworkButtons();
+                        $sm->setColorType('singleColor');
+                        ?>
+                    </div>
+                </div>
 			</div>
 			<div class="col-xs-12 col-md-6">
 				<h2>What Can I Expect as a Patient?</h2>
@@ -166,11 +173,12 @@
 	<div class="container">
 		<div class="row flex-row">
 			<div class="col-xs-12 col-md-6 flex-col">
-				<div class="box"><h2>As a patient of Diabetes &amp; Endocrinology Specialists of El Paso.</h2>
+                <img class="visible-xs visible-sm" src="<?=IMGURL?>/bg-diag2-mobile.jpg" alt="">
+				<div class="box"><h2>As a patient of Diabetes &amp; Endocrinology Specialists of <span class="br-md">El Paso.</span></h2>
 				<p>You can expect to receive the best of care available in the Southwest.</p></div>
 			</div>
 			<div class="col-xs-12 col-md-6 flex-col">
-				<div class="extra-padding"><h3>When you come to us a new patient, we’ll first evaluate your medical records.</h3>
+				<div class="extra-padding"><h3>When you come to us a new patient, we’ll first <span class="br-md">evaluate your medical records.</span></h3>
 				<p>This will allow our endocrinologist and diabetes doctor to better assess your history of any former illnesses and how it relates to your present health. Following your evaluation, Dr. Egbuonu will give you a treatment plan, all based on your needs. Our personalized approach is designed to give you the results needed to achieve optimum health as well as your goals for a happier, more successful life.</p></div>
 			</div>
 		</div>
@@ -181,7 +189,7 @@
 		<div class="row">
 			<div class="<?=FULLWIDTH?> text-center">
 				<div class="extra-padding"><h2>Receive Personalized Care by Contacting Us Today</h2>
-				<p>To schedule your consultation, simply give us a call today. Our friendly office manager will help answer all of your questions. Please note, we work on an appointment-only basis so that you can receive prompt, courteous, and dedicated service. We look forward to meeting you!</p></div>
+				<p>To schedule your consultation, simply give us a call today. Our friendly office manager will help <span class="br-md">answer all of your questions. Please note, we work on an appointment-only basis so that you <span class="br-md">can receive prompt, courteous, and dedicated service. We look forward to meeting you!</span></span></p></div>
 			</div>
 		</div>
 	</div>
