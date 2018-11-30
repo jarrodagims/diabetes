@@ -4,7 +4,8 @@
   background: #fff;
   position: relative;
   z-index: 0;
-
+  background: transparent url('../img/bg-diag4.jpg') left 0 no-repeat;
+  
   .box {
     background : #202328;
     background : rgba(32, 35, 40, .9);
@@ -54,18 +55,18 @@
     }
   }
 
-  .col-md-6:first-child::before {
-    background: transparent url('../img/bg-diag2.jpg') right 0 no-repeat;
-    background-size: cover; 
-    content: '';
-    display: block;
-    position: absolute;
-    left: -25vw;
-    width: 50vw;
-    top: 0;
-    height: 100%; 
-    z-index: -1;
-  }
+//   .col-md-6:first-child::before {
+//     background: transparent url('../img/bg-diag2.jpg') right 0 no-repeat;
+//     background-size: cover; 
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     left: -25vw;
+//     width: 50vw;
+//     top: 0;
+//     height: 100%; 
+//     z-index: -1;
+//   }
 
   .services-box {
     background: rgb(255,255,255);
@@ -109,7 +110,13 @@
     }
   }
 
+  @media screen and (min-width: $screen-sm-min) and (max-width: 1700px) {
+    background: transparent url('../img/bg-diag4.jpg') center 0 no-repeat;
+  }
+
   @media screen and (max-width: $screen-sm-max) {
+
+    background: none;
 
     .col-md-6:first-child::before {
       background: none;
@@ -130,11 +137,12 @@
       h2 {
         font-size: 17px;
         font-weight: 400;
+        margin-top: 0;
       }
 
       p {
         font-size: 13px;
-        margin-bottom: 1em;
+        margin-bottom: 0;
       }
     }
 

@@ -36,10 +36,10 @@
                 <div class="col-xs-6 col-md-6 text-right">
                     <div class="flex-row">
                         <div class="flex-col">
-                            <?php get_template_part('template-parts/icons/icon', '1'); ?>
+                            <a href="<?= SITEURL ?>/diabetes-management-el-paso/"><?php get_template_part('template-parts/icons/icon', '1'); ?></a>
                         </div>
                         <div class="flex-col">
-                            <a href="">
+                            <a href="<?= SITEURL ?>/diabetes-management-el-paso/">
                                 <h3><span class="arrow"><span>Diabetes Management</span> <span class="type">Type 1 | Type 2</span></span></h3>
                             </a>
                         </div>
@@ -48,10 +48,10 @@
                 <div class="col-xs-6 col-md-6">
                     <div class="flex-row">
                         <div class="flex-col">
-                            <?php get_template_part('template-parts/icons/icon', '2'); ?>
+                            <a href="<?= SITEURL ?>/diabetes-symptoms/"><?php get_template_part('template-parts/icons/icon', '2'); ?></a>
                         </div>
                         <div class="flex-col">
-                            <a href="">
+                            <a href="<?= SITEURL ?>/diabetes-symptoms/">
                                 <h3><span class="arrow">Diabetes Symptoms</span></h3>
                             </a>
                         </div>
@@ -62,11 +62,11 @@
     </section>
 <div class="flex-order">
     <section id="home-module-3">
-        <img src="<?=THEMEURL?>/img/bg-woman-mobile.jpg" class="visible-xs visible-sm" alt="" />
+        <div class="extra-padding"><img src="<?=THEMEURL?>/img/bg-woman-mobile.jpg" class="visible-xs visible-sm" alt="" /></div>
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <div class="accordion-btn" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><h2>Best Patient Centered Clinic in El Paso</h2></div>
+                    <div class="accordion-btn" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><h2><span>Best Patient Centered Clinic in El Paso</span></h2></div>
                     <div id="collapseExample" class="accord collapse">
                         <ul>
                             <li class="fas fa-check"><span>Best Patient-Centered Clinic in El Paso</span></li>
@@ -109,20 +109,20 @@
                             patients in the El Paso area<br /> with the following diagnosis:</h2></div>
                     <div id="collapse2" class="accord collapse">
                         <ul>
-                            <li class="fas fa-check"><a href=""><span>Diabetes (Type 1 and Type 2)</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Hyperthyroidism</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Hypothyroidism</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Hypogonadism</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Thyroid Nodules</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Thyroid Cancer</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Pituitary Tumors</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Adrenal Glands Disorder</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Adrenal Fatigue</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Osteoporosis</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Polycystic Ovarian Syndrome</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Transgender Medicine</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Calcium Disorders</span></a></li>
-                            <li class="fas fa-check"><a href=""><span>Obesity</span></a></li>
+                            <li class="fas fa-check"><span>Diabetes (Type 1 and Type 2)</span></li>
+                            <li class="fas fa-check"><span>Hyperthyroidism</span></li>
+                            <li class="fas fa-check"><span>Hypothyroidism</span></li>
+                            <li class="fas fa-check"><span>Hypogonadism</span></li>
+                            <li class="fas fa-check"><span>Thyroid Nodules</span></li>
+                            <li class="fas fa-check"><span>Thyroid Cancer</span></li>
+                            <li class="fas fa-check"><span>Pituitary Tumors</span></li>
+                            <li class="fas fa-check"><span>Adrenal Glands Disorder</span></li>
+                            <li class="fas fa-check"><span>Adrenal Fatigue</span></li>
+                            <li class="fas fa-check"><span>Osteoporosis</span></li>
+                            <li class="fas fa-check"><span>Polycystic Ovarian Syndrome</span></li>
+                            <li class="fas fa-check"><span>Transgender Medicine</span></li>
+                            <li class="fas fa-check"><span>Calcium Disorders</span></li>
+                            <li class="fas fa-check"><span>Obesity</span></li>
                         </ul>
                     </div>
 
@@ -132,12 +132,12 @@
                         <div>
                             <h2>Other Services</h2>
                             <ul>
-                                <li><a href="#">Hyper Thyroidism</a></li>
-                                <li><a href="#">Transgender</a></li>
-                                <li><a href="#">Osteoporosis</a></li>
-                                <li><a href="#">Thyroid Diseases</a></li>
-                                <li><a href="#">Obesity Management</a></li>
-                                <li><a href="#">Adrenal Fatigue</a></li>
+                                <li><a href="<?=SITEURL?>/hyperthyroidism-treatment-el-paso/">Hyper Thyroidism</a></li>
+                                <li><a href="<?=SITEURL?>/transgender-doctor-el-paso">Transgender</a></li>
+                                <li><a href="<?=SITEURL?>/osteoporosis-doctor-el-paso">Osteoporosis</a></li>
+                                <li><a href="<?=SITEURL?>/thyroid-doctor-el-paso">Thyroid Diseases</a></li>
+                                <li><a href="<?=SITEURL?>/obesity-treatment-el-paso">Obesity Management</a></li>
+                                <li><a href="<?=SITEURL?>/adrenal-fatigue">Adrenal Fatigue</a></li>
                             </ul>
                         </div>
                     </div>

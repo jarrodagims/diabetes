@@ -28,12 +28,12 @@
                 </div>
                 <div class="services-box sidebar-bottom-dark">
                     <ul class="flex-row">
-                        <li><a href="#">Hyper Thyroidism</a></li>
-                        <li><a href="#">Transgender</a></li>
-                        <li><a href="#">Osteoporosis</a></li>
-                        <li><a href="#">Thyroid Diseases</a></li>
-                        <li><a href="#">Obesity Management</a></li>
-                        <li><a href="#">Adrenal Fatigue</a></li>
+                        <li><a href="<?=SITEURL?>/hyperthyroidism-treatment-el-paso/">Hyper Thyroidism</a></li>
+                        <li><a href="<?=SITEURL?>/transgender-doctor-el-paso">Transgender</a></li>
+                        <li><a href="<?=SITEURL?>/osteoporosis-doctor-el-paso">Osteoporosis</a></li>
+                        <li><a href="<?=SITEURL?>/thyroid-doctor-el-paso">Thyroid Diseases</a></li>
+                        <li><a href="<?=SITEURL?>/obesity-treatment-el-paso">Obesity Management</a></li>
+                        <li><a href="<?=SITEURL?>/adrenal-fatigue">Adrenal Fatigue</a></li>
                     </ul>
                 </div>
             </section>

@@ -22,8 +22,12 @@
       color: $white;
       @include raleway();
       font-size: 23px;
-      @include arrow();
       font-weight: 300;
+
+      span {
+         @include arrow();
+         display: inline-block;
+      }
     }
 
     @media screen and (min-width: $screen-md-min) {
@@ -75,6 +79,7 @@
 
     ul li {
       font-size: 14px;
+      display: block;
       
       span {
         font-weight: 300;
@@ -82,11 +87,10 @@
     }
 
     img {
-      padding-left: 2em;
-      padding-right: 2em;
       margin-bottom: .5em;
       margin-right: auto;
       margin-left: auto;
+      @include dropshadow-thin();
     }
 
     h3 {
@@ -101,16 +105,27 @@
     }
 
     .accordion-btn {
-      margin-right: 40px;
-      margin-left: 40px;
+      margin-right: 15px;
+      margin-left: 15px;
       margin-bottom: 0;
     }
 
     .accordion-btn h2 {
-      font-size: 10px;
+      font-size: 13px;
       margin: 1em 10px;
-      padding: 2em 30px 2em 0;
+      padding: 2em 0 2em 0;
       position: relative;
+
+      span {
+         @include arrow();
+         display: inline-block;
+         text-align: left;
+
+         &::after {
+           width: 13px;
+           height: 13px;
+         }
+      }
 
       &::after {
         width: 12px;
