@@ -49,7 +49,6 @@ body #main .container article #sidebar {
   width: 468px;
   margin-left: 4em;
   text-align: center;
-  background: #151516;
 
   .sidebar-top-dark {
       background: #33373F;
@@ -107,6 +106,22 @@ body #main .container article #sidebar {
           }
         }
       }
+    }
+
+    @media screen and (max-width: $screen-sm-max) {
+      
+      ul li {
+        width: 100%;
+      }
+
+     padding: 1em;
+
+     .sidebar-top-dark {
+       p {
+         font-size: 16px;
+       }
+     }
+
     }
   }
 
@@ -443,6 +458,55 @@ body #main .container article #sidebar {
   }
 }
 
+
+    
+
+.sidebar-top {
+  background: url('../img/sidebar-top.jpg') 0 0 no-repeat;
+  background-size: cover;
+  height: 231px;
+  width: 100%; 
+}
+
+
+
+body #main .container article #sidebar {
+.sidebar-bottom {
+      padding: 0 4em 3.5em;
+
+  h2 {
+    margin-bottom: .5em;
+    color: #33373F;
+    font-size: 27px;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  p {
+    margin-bottom: 1em;
+    @include raleway();
+    color: #33373F;
+    line-height: 2;
+    font-size: 17px; 
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 2em 1em;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      font-size: 19px;
+    }
+
+    p {
+      font-size: 15px !important;
+    }
+  }
+}
+}
+
+
 @media screen and (min-width: $screen-md-min) {
   body #main .container article #sidebar {
     margin-bottom: 2em;
@@ -455,33 +519,6 @@ body #main .container article #sidebar {
     }
 
     
-
-    .sidebar-top {
-      background: url('../img/sidebar-top.jpg') 0 0 no-repeat;
-      background-size: cover;
-      height: 231px;
-      width: 100%; 
-    }
- 
-    .sidebar-bottom {
-      padding: 0 4em 3.5em;
-
-      h2 {
-        margin-bottom: .5em;
-        color: #33373F;
-        font-size: 27px;
-        margin-top: 2em;
-        font-family: 'Poppins', sans-serif;
-      }
-
-      p {
-        margin-bottom: 1em;
-        @include raleway();
-        color: #33373F;
-        line-height: 2;
-        font-size: 17px; 
-      }
-    }
   }
 }
 

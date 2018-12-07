@@ -8,7 +8,13 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KPCS894');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,26 +30,12 @@
         <?= get_option('sherpa_schema') ?>
 
     <?php endif; ?>
-    <link rel="apple-touch-icon" sizes="57x57" href="<?= SITEURL ?>/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="<?= SITEURL ?>/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="<?= SITEURL ?>/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="<?= SITEURL ?>/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="<?= SITEURL ?>/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="<?= SITEURL ?>/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="<?= SITEURL ?>/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="<?= SITEURL ?>/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= SITEURL ?>/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?= SITEURL ?>/icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= SITEURL ?>/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="<?= SITEURL ?>/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= SITEURL ?>/icons/favicon-16x16.png">
-    <link rel="manifest" href="<?= SITEURL ?>/icons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="<?= SITEURL ?>/icons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
 </head>
 <body <?php body_class(); ?>>
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPCS894"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <?php if (is_front_page()) : ?>
 <div class="landing-bg"><?php endif; ?>
     <!--[if lt IE 7]>
@@ -64,11 +56,23 @@
                                             'description'
                                         ); ?>" height="137" /></a>
                             <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right social-media sm">
+                                <li class="menu-item">
+                                    <?php $sm = new SocialMedia(array('facebook', 'twitter'));
+                                    $sm->setSize('sm');
+                                    $sm->showNetworkButtons();
+                                    $sm->setColorType('singleColor');
+                                    $sm->setListType('listUnstyled');
+                                    ?>
+                                </li>
                                 <li class="menu-item directions"><a
-                                            href="<?php echo get_site_url() ?>/contact-us"></a></li>
-                                <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"></a></li>
+                                            href="<?php echo get_site_url() ?>/contact-us"><span>2270 Joe Battle Blvd Suite O El Paso, TX 79938</span></a></li>
+                                <li class="menu-item contact visible-xs"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">
+                                        <button class="btn-primary btn">Call Now</button></a></li>
+                                <li class="menu-item contact hidden-xs"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><span><?php printPhone(); ?></span></a></li>
+
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -82,7 +86,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <?php
-                        if(have_posts()) {
+                        if(have_posts() && is_page()) {
                         while(have_posts()) {
                         the_post();
                             echo get_the_title();

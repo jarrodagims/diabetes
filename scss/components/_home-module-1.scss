@@ -69,6 +69,12 @@
     }
   }
 
+  @media screen and (min-width: $screen-lg-min) {
+    .jumbotron {
+       padding: 0 0;
+    }
+  }
+
   @media screen and (min-width: $screen-md-min) {
     .container {
       position: relative;

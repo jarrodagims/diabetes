@@ -63,8 +63,15 @@
   }
 }
 
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+  .navbar-sherpa .nav > li > a {
+    font-size: 9px;
+    text-transform: uppercase;
+  }
+}
 
-@media screen and (min-width: $screen-md-min) {
+
+@media screen and (min-width: $screen-lg-min) {
   .navbar-sherpa .nav > li > a {
     font-size: 12px;
     text-transform: uppercase;

@@ -40,7 +40,7 @@
                         </div>
                         <div class="flex-col">
                             <a href="<?= SITEURL ?>/diabetes-management-el-paso/">
-                                <h3><span class="arrow"><span>Diabetes Management</span> <span class="type">Type 1 | Type 2</span></span></h3>
+                                <h3><span class="arrow"><span>Diabetes Management</span> <span class="type">Type 1&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Type 2</span></span></h3>
                             </a>
                         </div>
                     </div>
@@ -69,26 +69,26 @@
                     <div class="accordion-btn" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><h2><span>Best Patient Centered Clinic in El Paso</span></h2></div>
                     <div id="collapseExample" class="accord collapse">
                         <ul>
-                            <li class="fas fa-check"><span>Best Patient-Centered Clinic in El Paso</span></li>
-                            <li class="fas fa-check">
+                            <li><span>Best Patient-Centered Clinic in El Paso</span></li>
+                            <li>
                                 <span>Dr. Ifeoma Egbuonu is a Highly Reviewed Endocrinologist</span></li>
-                            <li class="fas fa-check"><span>Being Local is Important to Us — We Strive to Give Back to This Wonderful Community</span>
+                            <li><span><strong>Being Local is Important to Us</strong> — We Strive to Give Back to This Wonderful Community</span>
                             </li>
-                            <li class="fas fa-check"><span>We’re Passionate About Our Practice!</span></li>
-                            <li class="fas fa-check">
+                            <li><span>We’re Passionate About Our Practice!</span></li>
+                            <li>
                                 <span>Our Medical Center is Located on the East Side of Town</span></li>
-                            <li class="fas fa-check"><span>We Value Patient Reviews, Please Leave Us One Today</span>
+                            <li><span>We Value Patient Reviews, Please Leave Us One Today</span>
                             </li>
-                            <li class="fas fa-check"><span>Our Office is Attentive to Your Needs, You’ll Always Be Attended To With Fast and Friendly Service!</span>
+                            <li><span>Our Office is Attentive to Your Needs, You’ll Always Be Attended To With Fast and Friendly Service!</span>
                             </li>
-                            <li class="fas fa-check"><span>We Specialize in the Diagnosis of Thyroid Cancer</span></li>
-                            <li class="fas fa-check"><span>We Operate by Appointment Only; Please Schedule Your Consultation Today</span>
+                            <li><span>We Specialize in the Diagnosis of Thyroid Cancer</span></li>
+                            <li><span><strong>We Operate by Appointment Only</strong>; Please Schedule Your Consultation Today</span>
                             </li>
-                            <li class="fas fa-check"><span>Our Transgender Medicine Specialist is One of the Few in the El Paso Area</span>
+                            <li><span>Our Transgender Medicine Specialist is One of the Few in the El Paso Area</span>
                             </li>
-                            <li class="fas fa-check"><span>Diabetes is a Treatable Disease — It’s Important to Seek Care Early On</span>
+                            <li><span><strong>Diabetes is a Treatable Disease</strong> — It’s Important to Seek Care Early On</span>
                             </li>
-                            <li class="fas fa-check"><span>Our Endocrinologist and Diabetes Doctor Provides Thorough Evaluations and Will Recommend Proper Treatments</span>
+                            <li><span>Our Endocrinologist and Diabetes Doctor Provides Thorough Evaluations and Will Recommend Proper Treatments</span>
                             </li>
                         </ul>
                     </div>
@@ -108,22 +108,32 @@
                     <div class="accordion-btn" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample"><h2>Our clinic provides<br />
                             patients in the El Paso area<br /> with the following diagnosis:</h2></div>
                     <div id="collapse2" class="accord collapse">
-                        <ul>
-                            <li class="fas fa-check"><span>Diabetes (Type 1 and Type 2)</span></li>
-                            <li class="fas fa-check"><span>Hyperthyroidism</span></li>
-                            <li class="fas fa-check"><span>Hypothyroidism</span></li>
-                            <li class="fas fa-check"><span>Hypogonadism</span></li>
-                            <li class="fas fa-check"><span>Thyroid Nodules</span></li>
-                            <li class="fas fa-check"><span>Thyroid Cancer</span></li>
-                            <li class="fas fa-check"><span>Pituitary Tumors</span></li>
-                            <li class="fas fa-check"><span>Adrenal Glands Disorder</span></li>
-                            <li class="fas fa-check"><span>Adrenal Fatigue</span></li>
-                            <li class="fas fa-check"><span>Osteoporosis</span></li>
-                            <li class="fas fa-check"><span>Polycystic Ovarian Syndrome</span></li>
-                            <li class="fas fa-check"><span>Transgender Medicine</span></li>
-                            <li class="fas fa-check"><span>Calcium Disorders</span></li>
-                            <li class="fas fa-check"><span>Obesity</span></li>
-                        </ul>
+
+                        <div class="columns">
+                            <div class="column">
+                                <ul>
+                                    <li><span>Diabetes (Type 1 and Type 2)</span></li>
+                                    <li><span>Hyperthyroidism</span></li>
+                                    <li><span>Hypothyroidism</span></li>
+                                    <li><span>Hypogonadism</span></li>
+                                    <li><span>Thyroid Nodules</span></li>
+                                    <li><span>Thyroid Cancer</span></li>
+                                    <li><span>Pituitary Tumors</span></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <ul>
+                                    <li><span>Adrenal Glands Disorder</span></li>
+                                    <li><span>Adrenal Fatigue</span></li>
+                                    <li><span>Osteoporosis</span></li>
+                                    <li><span>Polycystic Ovarian Syndrome</span></li>
+                                    <li><span>Transgender Medicine</span></li>
+                                    <li><span>Calcium Disorders</span></li>
+                                    <li><span>Obesity</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
@@ -132,7 +142,7 @@
                         <div>
                             <h2>Other Services</h2>
                             <ul>
-                                <li><a href="<?=SITEURL?>/hyperthyroidism-treatment-el-paso/">Hyper Thyroidism</a></li>
+                                <li><a href="<?=SITEURL?>/hyperthyroidism-treatment-el-paso/">Hyperthyroidism</a></li>
                                 <li><a href="<?=SITEURL?>/transgender-doctor-el-paso">Transgender</a></li>
                                 <li><a href="<?=SITEURL?>/osteoporosis-doctor-el-paso">Osteoporosis</a></li>
                                 <li><a href="<?=SITEURL?>/thyroid-doctor-el-paso">Thyroid Diseases</a></li>
@@ -174,8 +184,7 @@
 		<div class="row flex-row">
 			<div class="col-xs-12 col-md-6 flex-col">
                 <img class="visible-xs visible-sm" src="<?=IMGURL?>/bg-diag2-mobile.jpg" alt="">
-				<div class="box"><h2>As a patient of Diabetes &amp; Endocrinology Specialists of <span class="br-md">El Paso.</span></h2>
-				<p>You can expect to receive the best of care available in the Southwest.</p></div>
+				<div class="box"><h2>As a patient of Diabetes &amp; Endocrinology Specialists of El Paso, you can expect to receive the best of care available in the Southwest.</h2></div>
 			</div>
 			<div class="col-xs-12 col-md-6 flex-col">
 				<div class="extra-padding"><h3>When you come to us a new patient, we’ll first <span class="br-md">evaluate your medical records.</span></h3>

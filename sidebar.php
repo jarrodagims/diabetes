@@ -14,8 +14,8 @@
             <section class="shadow">
                 <div class="sidebar-top"></div>
                 <div class="sidebar-bottom"><h2>Endocrinologist</h2>
-                <p>Helping the El Paso Community Lead<br />
-                    Better Lives Through Excellent Care</p>
+                <p>Helping the El Paso Community Lead
+                    <span class="br-md">Better Lives Through Excellent Care</span></p>
                 <a href="<?= SITEURL ?>/contact-us/">
                     <button class="btn btn-outline">SCHEDULE AN APPOINTMENT</button>
                 </a></div>

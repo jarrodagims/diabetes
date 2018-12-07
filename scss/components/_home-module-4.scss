@@ -6,6 +6,11 @@
   z-index: 0;
   overflow: hidden;
 
+  .columns  {
+    display: flex;
+    flex-direction: row;
+  }
+
   h2 {
     color: $white;
     z-index: 1;
@@ -25,25 +30,28 @@
     align-items: flex-start;
     position: relative;
     z-index: 99;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
 
-    
+    .column {
+      margin-left: 2em;
+    }
 
-
-  ul {
+    ul {
     padding-left: 0;
     text-align: left;
-    margin-top: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
 
     li {
       margin-bottom: .5em;
-    }
+    } 
 
     li span {
       font-family: 'Roboto', sans-serif;
       font-weight: normal;
       line-height: 1.5;
       color: $white;
+      font-size: 14px;
     }
 
 
@@ -86,7 +94,7 @@
     z-index: 99;
   }
 
-  background: transparent url('../img/bg-diag3.jpg') center 0 no-repeat;
+  background: transparent url('../img/bg-diag-new.jpg') 0 0 no-repeat;
   background-size: cover;
 
 //   .col-md-6:last-child::after {
@@ -135,7 +143,7 @@
           color: $white;
           margin: 2px;
           padding: 2.5em 1em;
-          font-size: 12px;
+          font-size: 13px;
           border: double 1px transparent;
           background-image: linear-gradient(#33373F, #33373F), radial-gradient(circle at top left, #3AB9F6,#8B17FF);
 
@@ -170,7 +178,13 @@
           display: table;
       }
     }
-    
+
+
+    .col-md-6:first-child {
+      h2 {
+        margin-bottom: 1.5em;
+      }
+    }
 
     .col-md-6:last-child {
       background: url('../img/bg-city.jpg') 0 0 no-repeat;
@@ -195,7 +209,6 @@
           width: 33.33%;
           text-align: center;
           font-size: 12px;
-          flex: 1;
           align-items: center;
           justify-content: center;
           display: flex;
@@ -226,10 +239,24 @@
 
       ul {
         margin-bottom: 3em;
+        margin-top: 0;
       }
 
       ul li {
         display: block;
+      }
+
+      .columns {
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .collapse {
+        width: 100%;
+      }
+
+      .column {
+        margin: 0 auto;
       }
 
       .accordion-btn {

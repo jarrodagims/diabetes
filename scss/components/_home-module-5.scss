@@ -94,6 +94,9 @@
 
     @media screen and (max-width: $screen-sm-max) {
 
+      
+
+
      padding: 1em 0;
      
       span {
@@ -113,6 +116,7 @@
       &::after {
         display: none;
       }
+
 
     }
 }

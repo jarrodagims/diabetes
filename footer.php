@@ -1,7 +1,6 @@
     <div id="map-section">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13566.061303960667!2d-106.2666948!3d31.7837027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4772737c10c313d8!2sDiabetes+%26+Endocrinology+Specialists+of+El+Paso!5e0!3m2!1sen!2sus!4v1543429974859" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13566.061259947093!2d-106.266695!3d31.783703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e7443af539703d%3A0xf521c96b5f088c4e!2s2270+Joe+Battle+Blvd+Suite+O%2C+El+Paso%2C+TX+79938!5e0!3m2!1sen!2sus!4v1543612076797" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-
 <section id="footer">
     <div class="container">
             <div class="flex-row row">
@@ -18,7 +17,7 @@
 
                         <div class="contact-footer phone-footer">
                         <div><span class="title">Address</span>
-                            <p>2270 Joe Battle Blvd, Suite O<br />
+                            <p>2270 Joe Battle Blvd Suite O<br />
                                 El Paso, TX 79938<br />
                                 <strong>By appointment only</strong><br />
                                 <a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><?php printPhone(); ?></a></p>

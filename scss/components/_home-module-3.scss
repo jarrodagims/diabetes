@@ -27,6 +27,7 @@
       span {
          @include arrow();
          display: inline-block;
+         text-align: left;
       }
     }
 
@@ -47,13 +48,23 @@
     padding-left: 0;
     text-align: left;
     margin-top: 2em;
+    margin-left: 2em;
+    color: #606060;
 
     li {
       margin-bottom: .5em;
+      line-height: 1.5;
+      font-weight: 300;
+
+
+      strong {
+        color: $sherpa-brand-primary;
+        font-weight: 400;
+      }
     }
 
     li span {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight: normal;
       line-height: 1.5;
     }
